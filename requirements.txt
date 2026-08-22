@@ -1,0 +1,14 @@
+pytest
+asyncpg
+pydantic
+uliweb-alembic
+sqlalchemy
+psycopg2-binary
+prometheus-client
+pylint
+starlette
+fastapi
+uvicorn
+httpx
+pytest-cov
+pytest-asyncio
