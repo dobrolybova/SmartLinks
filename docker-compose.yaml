@@ -1,0 +1,29 @@
+version: "3.0"
+services:
+  rule_service:
+    build:
+      context: rule_service
+      dockerfile: Dockerfile
+    environment:
+      PYTHONPATH: /SmartLinks
+    command: python3 rule_main.py
+    network_mode: host
+    working_dir: /SmartLinks/rule_service
+  redirect_service:
+    build:
+      context: redirect_service
+      dockerfile: Dockerfile
+    environment:
+      PYTHONPATH: /SmartLinks
+    command: python3 redirect_main.py
+    network_mode: host
+    working_dir: /SmartLinks/redirect_service
+  db:
+    image: postgres
+    restart: always
+    ports:
+      - "5438:5432"
+    environment:
+      POSTGRES_USER: yulia
+      POSTGRES_DB: rules
+      POSTGRES_PASSWORD: yulia

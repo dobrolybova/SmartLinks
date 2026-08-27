@@ -1,0 +1,2 @@
+[run]
+omit = rule_service/tests/*, rule_service/alembic/*, redirect_service/tests/*,

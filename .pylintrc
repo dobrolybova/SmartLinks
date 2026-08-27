@@ -1,0 +1,10 @@
+[MASTER]
+
+disable=missing-function-docstring, missing-class-docstring, missing-module-docstring, logging-fstring-interpolation
+
+
+[FORMAT]
+max-line-length=160
+
+[MESSAGES CONTROL]
+disable=broad-exception-caught

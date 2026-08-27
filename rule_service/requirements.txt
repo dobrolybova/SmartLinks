@@ -1,0 +1,9 @@
+asyncpg
+pydantic
+uliweb-alembic
+sqlalchemy
+psycopg2-binary
+prometheus-client
+starlette
+fastapi
+uvicorn
